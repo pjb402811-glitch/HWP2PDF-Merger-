@@ -69,6 +69,19 @@ export const Header: React.FC<HeaderProps> = ({
           {/* Format Tabs Switcher */}
           <div className="bg-slate-100 p-1 rounded-xl flex items-center gap-1 border border-slate-200/80">
             <button
+              id="tab-mode-hwp"
+              type="button"
+              onClick={() => onChangeFormat('hwp')}
+              className={`flex items-center gap-1.5 px-3 py-1.5 rounded-lg text-xs font-bold transition-all cursor-pointer ${
+                isHwp
+                  ? 'bg-white text-sky-700 shadow-2xs'
+                  : 'text-slate-600 hover:text-slate-900'
+              }`}
+            >
+              <FileOutput className="w-3.5 h-3.5" />
+              한글 → PDF
+            </button>
+            <button
               id="tab-mode-pdf"
               type="button"
               onClick={() => onChangeFormat('pdf')}
@@ -93,19 +106,6 @@ export const Header: React.FC<HeaderProps> = ({
             >
               <Presentation className="w-3.5 h-3.5" />
               PPTX 병합
-            </button>
-            <button
-              id="tab-mode-hwp"
-              type="button"
-              onClick={() => onChangeFormat('hwp')}
-              className={`flex items-center gap-1.5 px-3 py-1.5 rounded-lg text-xs font-bold transition-all cursor-pointer ${
-                isHwp
-                  ? 'bg-white text-sky-700 shadow-2xs'
-                  : 'text-slate-600 hover:text-slate-900'
-              }`}
-            >
-              <FileOutput className="w-3.5 h-3.5" />
-              한글 → PDF
             </button>
           </div>
 
