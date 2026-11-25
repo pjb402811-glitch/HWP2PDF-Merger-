@@ -1,0 +1,6 @@
+{
+  "name": "PDF 병합기 (Lossless PDF Merger)",
+  "description": "품질 저하 없이 원본 해상도와 벡터, 서식을 100% 보존하여 여러 PDF 및 PPTX 파워포인트 파일을 하나로 병합하고 선택한 페이지를 삭제 관리하는 무손실 도구",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
